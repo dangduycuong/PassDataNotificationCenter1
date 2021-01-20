@@ -8,9 +8,7 @@
 
 import UIKit
 
-extension Notification.Name {
-    static let key = Notification.Name("12345")
-}
+
 
 class MasterTableViewController: UITableViewController {
     
@@ -18,7 +16,7 @@ class MasterTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(setData(notification:)), name: .key, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(setData(notification:)), name: .key2, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,9 +45,11 @@ class MasterTableViewController: UITableViewController {
 //    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailVCID") as? DetailViewController
-        detailVC?.receivedText = array[indexPath.row]
-        present(detailVC!, animated: true, completion: nil)
+        let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailVCID") as! DetailViewController
+        detailVC.receivedText = array[indexPath.row]
+        title = ""
+        navigationController?.pushViewController(detailVC, animated: true)
+//        present(detailVC!, animated: true, completion: nil)
     }
     
     @objc func setData(notification: NSNotification) {

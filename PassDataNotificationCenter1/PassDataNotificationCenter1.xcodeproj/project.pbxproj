@@ -13,6 +13,7 @@
 		5E9D8A7122CF38C80025B51E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D8A6F22CF38C80025B51E /* Main.storyboard */; };
 		5E9D8A7322CF38C90025B51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D8A7222CF38C90025B51E /* Assets.xcassets */; };
 		5E9D8A7622CF38C90025B51E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D8A7422CF38C90025B51E /* LaunchScreen.storyboard */; };
+		CED4505025B7E1DB00618563 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4504F25B7E1DB00618563 /* NotificationName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5E9D8A7222CF38C90025B51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E9D8A7522CF38C90025B51E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E9D8A7722CF38C90025B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED4504F25B7E1DB00618563 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5E9D8A6B22CF38C80025B51E /* AppDelegate.swift */,
 				5E2F863E22CF4EF000C337BA /* MasterTableViewController.swift */,
 				5E2F863C22CF4CA300C337BA /* DetailViewController.swift */,
+				CED4504F25B7E1DB00618563 /* NotificationName.swift */,
 				5E9D8A6F22CF38C80025B51E /* Main.storyboard */,
 				5E9D8A7222CF38C90025B51E /* Assets.xcassets */,
 				5E9D8A7422CF38C90025B51E /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E2F863D22CF4CA300C337BA /* DetailViewController.swift in Sources */,
+				CED4505025B7E1DB00618563 /* NotificationName.swift in Sources */,
 				5E9D8A6C22CF38C80025B51E /* AppDelegate.swift in Sources */,
 				5E2F863F22CF4EF000C337BA /* MasterTableViewController.swift in Sources */,
 			);

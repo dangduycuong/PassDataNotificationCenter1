@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func buttonDetail(_ sender: Any) {
-        NotificationCenter.default.post(name: .key, object: detailTextField.text)
+        NotificationCenter.default.post(name: .key2, object: detailTextField.text)
 //        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
